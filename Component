@@ -1,5 +1,5 @@
-/* Component - block of JS code, that seems like HTML. Any React project using components as a "brick", which contains a part of layout. */  
-/* To create a component we need to make a new function */
+\\ Component - block of JS code, that seems like HTML. Any React project using components as a "brick", which contains a part of layout.  
+// To create a component we need to make a new function */
 const Component = () => {/* In these brackets we can put HTML sytax. But first we have to add a "return"*/
   return( /* We may not whrite a round brackets if we create a <div> at the first string. I like parentheses, so i'll write them. */
     <div> Your Layout  /* You can't add a layout outside the first <div>. Also you can't use more than one <div>. This important and nessassarly to remember. */
