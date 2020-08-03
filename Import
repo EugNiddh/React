@@ -1,0 +1,6 @@
+//We may use our components in one file, but that's not effectivity. More better split them apart and set in different files.
+//And we still can use them in any components. 
+//To use component from another file we have to add an "import" at the top of code.
+import component_name from "./another_component_file"
+//But that's not enough. We need to add an "export" in exported file at the bottom of code.
+export default component_name
