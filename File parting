@@ -1,0 +1,35 @@
+//You should make your project readeble for another people. To increse readeble you should split your code into parts and part them to different files.
+//We have a App.js. From this file React starts rendering. If we add all of our code into this file, we can easely get confused. 
+//We should create a new file, name it "content_name"(Best practice) and transer our code there.
+---//Bad practice
+const Data = (props) => {
+    return (
+      <div>
+          <DataItem id="1" name="Data" />
+      </div>
+    )
+}
+
+const App = (props) => {
+  return (
+    <div>
+    <Navbar />
+      <div className='app-wrapper-content'>
+        <Data />
+      </div>
+    </div>
+  )
+}
+--- //Best practice
+import Data from './Data';
+
+const App = (props) => {
+  return (
+    <div>
+    <Navbar />
+      <div className='app-wrapper-content'>
+        <Data />
+      </div>
+    </div>
+  )
+}
